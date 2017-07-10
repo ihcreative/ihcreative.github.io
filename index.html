@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Emotiv App</title>
+		<meta name="description" content="Learning About yourself">
+		<script type="text/JavaScript">
+			function showMessage(){
+				var message = document.getElementById("questions").value;
+				display_message.innerHTML= message;
+			}
+		</script>
+	</script>
+	</head>
+	<body>
+		<header>
+			<h1>Emotiv App</h1>
+		</header>
+		<section>
+			<h1>Experiment One: Introverts/Extroverts</h1>
+				<p>Please take the following quiz to tell us about your social interaction needs and experiences.</p>
+				<form id="questions">
+					<fieldset>
+						<legend>Self description</legend>
+						<label><b>On most days, I describe myself as:</b></label>
+						<select name="intro-extro">
+							<option value="Introvert">Mostly an Introvert</option>
+							<option value="Extrovert">Mostly an Extrovert</option>
+							<option value="Both">Equally an Introvert and Extrovert</option>
+							<option value="DontKnow">I don't know</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Outside description</legend>
+						<label><b>On most days, my family describes me as:</b></label>
+						<select name="intro-extro">
+							<option value="Introvert">Mostly an Introvert</option>
+							<option value="Extrovert">Mostly an Extrovert</option>
+							<option value="Both">Equally an Introvert and Extrovert</option>
+							<option value="DontKnow">I don't know</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Interaction experiences</legend>
+					</fieldset>
+
+					<button type="submit" onclick="showMessage()" value="submit">Submit and view results</button>
+
+				</form>					
+		</section>
+		<section>
+			<h2>Results</h2>
+			<p><span id = "display_message"></span> </p>
+		</section>
+		<footer>
+			<p>All rights...</p>
+		</footer>
+	</body>
+</html>
